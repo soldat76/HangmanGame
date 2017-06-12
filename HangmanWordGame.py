@@ -11,8 +11,8 @@
 
 import random
 
-wordList = ["hello","testing","seventy","victoria","cauliflower","pineapple","crevasse"] # The word list.
-wordHint = ["A greeting","Experimenting","A number","A capital city of a Canadian province","A vegetable","A fruit","A geological feature of a glacier"] # The hint list.
+wordList = ["hello","testing","seventy","victoria","cauliflower","pineapple","crevasse","overwatch"] # The word list.
+wordHint = ["A greeting","Experimenting","A number","A capital city of a Canadian province","A vegetable","A fruit","A geological feature of a glacier","A Game"] # The hint list.
 wordChosen = random.choice(wordList)    # This variable will contain the hidden word. It will be shown to the user after the game has ended.
 
 guessesLeft = 5     # This variable will determine the amount of tries the user has. If it reaches less than 0, the game ends.
@@ -38,6 +38,8 @@ elif wordChosen == wordList[5]:
     print("\nYour hint is: {}".format(wordHint[5]))
 elif wordChosen == wordList[6]:
     print("\nYour hint is: {}".format(wordHint[6]))
+elif wordChosen == wordList[7]:
+    print("\nYour hint is: {}".format(wordHint[7]))
 
 # Begin user guesses quality check.
 while True:
@@ -93,6 +95,8 @@ elif wordChosen == wordList[5]:
     print("\nYour hint is: {}".format(wordHint[5]))
 elif wordChosen == wordList[6]:
     print("\nYour hint is: {}".format(wordHint[6]))
+elif wordChosen == wordList[7]:
+    print("\nYour hint is: {}".format(wordHint[7]))
 
 # User guess quality check.
 while True:
@@ -147,6 +151,8 @@ elif wordChosen == wordList[5]:
     print("\nYour hint is: {}".format(wordHint[5]))
 elif wordChosen == wordList[6]:
     print("\nYour hint is: {}".format(wordHint[6]))
+elif wordChosen == wordList[7]:
+    print("\nYour hint is: {}".format(wordHint[7]))
     
 ###### REPEAT BELOW for multiple letter guessing for long word ######
     
@@ -189,7 +195,7 @@ while len(wordSoFarCheck) != len(wordChosen):
 
 # This if else statement checks if the user has correctly guessed the word.
     if len(wordSoFarCheck) == len(wordChosen):
-        print("You have correctly guessed the word!\n\n{}\n".format(wordSoFar))
+        input("You have correctly guessed the word! Press enter to exit!\n\n{}\n".format(wordSoFar))
         break
     else:
         print("This is what you have so far!\n\n{}\n".format(wordSoFar))
@@ -207,4 +213,6 @@ while len(wordSoFarCheck) != len(wordChosen):
             print("\nYour hint is: {}".format(wordHint[5]))
         elif wordChosen == wordList[6]:
             print("\nYour hint is: {}".format(wordHint[6]))
+        elif wordChosen == wordList[7]:
+            print("\nYour hint is: {}".format(wordHint[7]))
 
