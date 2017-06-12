@@ -5,3 +5,8 @@ This program will initiate a guessing word game (Hangman). The words will be ran
 Uploaded: *HangmanWordGame.py*
 
 * Initial release
+
+### June 11 2017
+
+* Added one new word
+* Added "enter to exit" prompt
